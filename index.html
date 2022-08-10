@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Zari task </title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Zari task">
+        <meta name = "kaywords" content="Zari task">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- ready -->
+        <div id="ready">
+            <i class="fa fa-spinner fa-5x fa-spin"></i>
+        </div>
+
+        <!-- back to top -->
+        <a id="topBtn" class="position-fixed bottom-0 end-0 translate-middle text-white"><i class="fa-solid fa-chevron-up fs-3 p-2 main-bg rounded-circle"></i></a>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-white p-0">
+            <div class="container-fluid container-xl w-special-95 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand"><img src="imgs/navbar/ZARI LOGO-02.png" alt="ZARI LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-3 py-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why">Why Loyalty System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how">How it work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sample">Sample</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Our Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="custome d-flex justify-content-evenly align-items-center pb-4 pb-lg-0">
+                        <div class="currency py-2">
+                            <img id="img-select" src="imgs/navbar/Flag_of_the_United_States.svg.png" alt="united-states">
+                            <select class="py-1" id="currency" name="currency">
+                                <option selected value="dollar">
+                                    USD ($)
+                                </option>
+                                <option value="pound">
+                                    EGY (LE)
+                                </option>
+                                <option value="euro">
+                                    EURO (E)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="language py-2">
+                            <i class="fa-solid fa-globe fs-6"></i>
+                            <select class="py-1" name="language">
+                                <option selected value="English">
+                                    En
+                                </option>
+                                <option value="Arabic">
+                                    Ar
+                                </option>
+                                <option value="French">
+                                    Fr
+                                </option>
+                            </select>
+                        </div>
+                        <a href="signIn.html" target="_blank" class="btn px-4">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header section -->
+        <header id="overview" class="overview position-relative">
+            <div class="vectors">
+                <img src="imgs/header/Group 1.png" class="position-absolute top-0 end-0"  alt="vector">
+                <img src="imgs/header/Group 2.png" class="position-absolute top-0 start-0"  alt="vector">
+                <img src="imgs/header/Vector 20.png" class="position-absolute w-25 mx-auto vector start-50 translate-middle"  alt="vector">
+            </div>
+            <div class="total-header bg-light min-vh-70 d-flex justify-content-center align-items-end">
+                <div class="container">
+                    <div class="row gx-0 gy-4 d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="caption">
+                                <h1 class="text-capitalize fw-bold mb-4">The first <span class="main-color">loyalty systems</span> provider in the Middle East.</h1>
+                                <p class="mb-4 py-1">Keep your customers loyal and guarantee your customer retention. The Complete Loyalty Solution
+                                    Everything you need to increase customer loyalty will be available now within one Application 
+                                </p>
+                                <div class="buttons">
+                                    <a href="#pricing" class="btn main-btn py-2 px-4 me-3">Try it For Free</a>
+                                    <a href="#footer" class="btn second-btn py-2 px-4">Schedule A Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-header">
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#E4E4E4" d="M49,-76.3C63.3,-67.1,74.5,-53.1,77.4,-37.9C80.4,-22.8,75,-6.4,70,8.2C65,22.7,60.3,35.4,52.3,46.3C44.4,57.3,33.3,66.4,20.6,70.2C7.9,73.9,-6.4,72.3,-21.1,69.2C-35.8,66.1,-50.8,61.6,-59,51.5C-67.2,41.4,-68.7,25.7,-68.4,11.3C-68.1,-3,-66.1,-16.2,-60.8,-27.8C-55.5,-39.3,-46.8,-49.4,-36.2,-60.3C-25.5,-71.2,-12.7,-82.9,2.3,-86.5C17.4,-90.1,34.7,-85.6,49,-76.3Z" transform="translate(100 100)" />
+                                </svg>
+                                <img src="imgs/header/Gift Illustration.png" class="w-100" alt="gift">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- why layout section -->
+        <section id="why" class="why-layout position-relative pt-5">
+            <div class="vectors">
+                <img src="imgs/why layout/Group 10.png" class="position-absolute top-0 start-0"  alt="vector">
+            </div>
+            <div class="container-fluid pt-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="why-layout text-center py-lg-5 py-3 w-75 mx-auto">
+                            <h2 class="semi-bold fs-1">Why Zari Loyalty System?</h2>
+                        </div>
+                    </div>
+                    <div class="layout-container bg-black pt-5">
+                        <div class="row gy-4 d-flex justify-content-center align-items-end">
+                            <div class="col-xl-3">
+                                <div class="img-layout">
+                                    <img src="imgs/why layout/At the office-amico 1.png" alt="At the office">
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <div class="layout">
+                                            <div class="child d-flex mb-2">
+                                                <i class="fa-solid fa-1 main-color"></i>
+                                                <h5>Relevant Customer Data and Consumer Trends</h5>
+                                            </div>
+                                            <p>Higher accuracy of customer’s data as they provide it by themselves through the program.</p>
+                                        </div>
+                                        <div class="layout special-layout">
+                                            <div class="child d-flex">
+                                                <i class="fa-solid fa-2 main-color"></i>
+                                                <h5>Build Brand Reputation</h5>
+                                            </div>
+                                            <p>When customers feel like your brand offers them great value, they may also feel more favorably toward it.</p>
+                                        </div>
+                                        <div class="layout third-layout">
+                                            <div class="child d-flex">
+                                                <i class="fa-solid fa-3 main-color"></i>
+                                                <h5>Increase in Word-of-Mouth Advertising</h5>
+                                            </div>
+                                            <p>By building a strong emotional connection with consumers and fostering loyalty, you’re also creating opportunities to win new customers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="layout">
+                                            <div class="child d-flex">
+                                                <i class="fa-solid fa-4 main-color"></i>
+                                                <h5>Increase revenue</h5>
+                                            </div>
+                                            <p>People participating in loyalty programs aim to gain something, achieve a prize, such as points for travel, buy an appliance, or take an order for free, when consumers know they are close to achieving this, they end up buying more and your business earns more profit.</p>
+                                        </div>
+                                        <div class="layout special-layout">
+                                            <div class="child d-flex">
+                                                <i class="fa-solid fa-5 main-color"></i>
+                                                <h5>Develop your brand identity</h5>
+                                            </div>
+                                            <p>By adding a competitive advantage over your competitors.</p>
+                                        </div>
+                                        <div class="layout last-layout">
+                                            <div class="child d-flex">
+                                                <i class="fa-solid fa-6 main-color"></i>
+                                                <h5>Reduce seasonality</h5>
+                                            </div>
+                                            <p>By building a strong emotional connection with consumers and fostering loyalty, you’re also creating opportunities to win new customers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features section -->
+        <section id="features" class="features position-relative py-5">
+            <div class="vectors">
+                <img src="imgs/features/Vector 14.png" class="position-absolute"  alt="vector">
+                <img src="imgs/features/Vector 15.png" class="position-absolute mt-5"  alt="vector">
+                <img src="imgs/features/Vector 14 (1).png" class="position-absolute"  alt="vector">
+                <img src="imgs/features/Vector 15 (1).png" class="position-absolute mt-5"  alt="vector">
+            </div>
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-title text-center pt-3 w-75 mx-auto">
+                            <h2 class="semi-bold fs-1 mb-3">Features</h2>
+                            <p class="mx-auto">The best platform Customer Loyalty system with everything you need to turn visitors into happy, loyal customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="features-container pt-4">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-1">
+                                            <img src="imgs/features/digital-wallet 1.png" alt="digital-wallet">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">Mobile Wallet Enabled</h5>
+                                        <p class="mb-0">Create beautiful digital stamp cards in minutes. No design skills required. No coding necessary.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-2">
+                                            <img src="imgs/features/app-development 1.png" alt="app-development">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">No mobile application needed</h5>
+                                        <p class="mb-0">All you need is to access the customer wallet and web browser only.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-3">
+                                            <img src="imgs/features/data-integration 1.png" alt="data-integration">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">Data Integrity</h5>
+                                        <p class="mb-0">Every transaction and event is written to the secure database. Full audit trail.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-4">
+                                            <img src="imgs/features/audience 1.png" alt="audience">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">Reach Customer Insights</h5>
+                                        <p class="mb-0">Measure the real, financial benefits of your digital loyalty program. censored insights from day one.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-5">
+                                            <img src="imgs/features/growth 1.png" alt="growth">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">Loyalty Program Metrics</h5>
+                                        <p class="mb-0">Track and get real data on the ROI of your digital loyalty program.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature px-4 py-4">
+                                        <div class="feature-img feature-6">
+                                            <img src="imgs/features/gift-card 1.png" alt="gift-card">
+                                        </div>
+                                        <h5 class="fw-bold mt-4 mb-3">Unlimited Cards</h5>
+                                        <p class="mb-0">Unlimited customers. Unlimited push messages. Unlimited rewards. Unlimited transactions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- how it work section -->
+        <section id="how" class="how py-5 position-relative">
+            <div class="vectors">
+                <img src="imgs/how-it-work/Group 12.png" class="position-absolute start-0 bottom-0"  alt="vector">
+            </div>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-title text-center py-3 w-85 mx-auto mb-3">
+                            <h2 class="semi-bold fs-1 mb-3 text-capitalize">Create your Digital Loyalty system in a few Minutes</h2>
+                            <p class="mx-auto">Offer rewards, discounts, and other special incentives to attract and retain customers in a few steps.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="min-vh-100 d-flex row gx-0 gy-5 position-relative">
+                            <div class="col-lg-6 align-self-start">
+                                <div class="work text-capitalize">
+                                    <h4 class="semi-bold mb-3">1-	Choose the right system.</h4>
+                                    <p>that will fit your business and satisfy your customers</p>
+                                    <img src="imgs/how-it-work/Subscriptions-amico 1.png" class="w-60" alt="Subscriptions">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-self-end">
+                                <div class="work text-capitalize d-flex flex-column">
+                                    <h4 class="semi-bold mb-3">2- Searchable Transaction History.</h4>
+                                    <p class="semi-bold">Segment customers and retarget them with special deals or rewards based on their behavior.</p>
+                                    <img src="imgs/how-it-work/Segment-amico 1.png" class="w-60 align-self-end" alt="Segment">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="min-vh-100 d-flex row gx-0 gy-5">
+                            <div class="col-lg-6 align-self-start">
+                                <div class="work text-capitalize">
+                                    <h4 class="semi-bold mb-3">3-	Connect with Customers.</h4>
+                                    <p>Send targeted messages straight to your customers' smartphone & iPhone lock screen - no app development required.
+                                        Targeted Messages Send an update to all of your customers or target a specific customer segment.
+                                        </p>
+                                    <img src="imgs/how-it-work/Push notifications-amico 1.png" class="w-60" alt="notifications">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-self-end">
+                                <div class="work text-capitalize d-flex flex-column">
+                                    <h4 class="semi-bold mb-3">4-	Reward your Customers.</h4>
+                                    <p class="semi-bold">Use zari’ loyalty system that is made especially for you to reward your customers</p>
+                                    <img src="imgs/how-it-work/Send gift-amico 1.png" class="w-60 align-self-end" alt="Send gift">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="min-vh-100 d-flex row gx-0 gy-5 position-relative">
+                            <div class="col-lg-6 align-self-start">
+                                <div class="work text-capitalize">
+                                    <h4 class="semi-bold mb-3">5- Measure your Loyalty Program Results</h4>
+                                    <p>Track key metrics and optimize performance to drive loyalty.
+                                        Get to know who your most loyal customers are through to further strengthen relationships.
+                                        </p>
+                                    <img src="imgs/how-it-work/Dashboard-amico 1.png" class="w-60" alt="Dashboard">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-self-end">
+                                <div class="work text-capitalize d-flex flex-column">
+                                    <h4 class="semi-bold mb-3">6- Loyalty Program Metrics</h4>
+                                    <p class="semi-bold">Track and get real data on the ROI of your digital loyalty program.</p>
+                                    <img src="imgs/how-it-work/Design stats-amico 1.png" class="w-60 align-self-end" alt="Design stats">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sample section -->
+        <section id="sample" class="sample position-relative pb-4">
+            <div class="vectors">
+                <img src="imgs/sample/Group 11.png" class="position-absolute start-0 top-0"  alt="vector">
+            </div>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-title text-center py-3 w-85 mx-auto mb-4">
+                            <h2 class="fw-bold text-capitalize">Target Market</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="row gx-4 gy-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Opened-bro 1.png" alt="flowers-shop">
+                                    </div>
+                                    <h4 class="text-white py-4">Flowers Shop</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Street Food-amico (1) 1.png" alt="Street Food">
+                                    </div>
+                                    <h4 class="text-white py-4">food truck</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Shops re-opening soon-amico (1) 1.png" alt="Coffee Shop">
+                                    </div>
+                                    <h4 class="text-white py-4">Coffee Shop</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Beauty salon-amico.png" alt="beauty salon">
+                                    </div>
+                                    <h4 class="text-white py-4">beauty salon</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Gym-amico (1).png" alt="GYM">
+                                    </div>
+                                    <h4 class="text-white py-4">GYM</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Car wash-amico (1).png" alt="Car Washing">
+                                    </div>
+                                    <h4 class="text-white py-4">Car Washing</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Sauna-pana.png" alt="Spa Center">
+                                    </div>
+                                    <h4 class="text-white py-4">Spa Center</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Dog paw-amico.png" alt="Pets Grooming">
+                                    </div>
+                                    <h4 class="text-white py-4">Pets Grooming</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Eating together-amico.png" alt="Resaturant">
+                                    </div>
+                                    <h4 class="text-white py-4">Resaturant</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Motocross-amico.png" alt="Rent Bike">
+                                    </div>
+                                    <h4 class="text-white py-4">Rent Bike</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Shops re-opening soon-cuate.png" alt="Ice Creem">
+                                    </div>
+                                    <h4 class="text-white py-4">Ice Creem</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="market bg-black">
+                                    <div class="img-market px-4 d-flex justify-content-center align-items-center">
+                                        <img src="imgs/sample/Birthday cake-amico 1.png" alt="Desserts">
+                                    </div>
+                                    <h4 class="text-white py-4">Desserts</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- clients section -->
+        <section id="clients" class="clients py-4">
+            <div class="row gx-0">
+                <div class="col-12">
+                    <div class="main-title text-center py-3 w-85 mx-auto mb-2">
+                        <h2 class="semi-bold fs-1 mb-2 text-capitalize">our clients</h2>
+                        <p class="mx-auto">Be One of our Clients.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="container-fluid bg-black-9 pt-5">
+                        <div class="pt-5">
+                            <div class="dashboard-imgs d-flex pt-3">
+                                <div class="group group-first botder-top-none">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/بيرجوس لوجو 1.png" class="fixed-width-img" alt="لوجو بيرجوس">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 28.png" class="fixed-width-img" alt="Pure bar cafe">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 2.png" alt="al-sukaria cafa">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 9.png" class="fixed-width-img" alt="عصائر ريد جوس">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 26.png" alt="the-blach garage">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 4.png" class="w-100" alt="client">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 5.png" alt="R2">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 6.png" alt="java time">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo lara spa done 2.png" alt="lara spa">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/logo 17.png" class="fixed-width-img" alt="laftah">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-imgs d-flex">
+                                <div class="group group-first botder-top-none">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/logo1 1.png" alt="أرياف الوادي">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img bg-blue">
+                                        <img src="imgs/clients/logo 11.png" alt="مركز 2000">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 12.png" alt="memories">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 13.png" alt="versillia">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 14.png" alt="alfa">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 15.png" alt="أزهار الشتاء">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 16.png" class="fixed-width-img" alt="eighth">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 19.png" class="fixed-width-img" alt="azor">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 18.png" alt="القهوة السريعة">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/اليت لوجو-01 1.png" class="fixed-width-img" alt="elite">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-imgs d-flex pb-3">
+                                <div class="group group-first group-last border-right-none botder-top-none">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/logo 1.png" class="fixed-width-img" alt="haven cafe">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 20.png" class="fixed-width-img" alt="life lawing">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo2 1.png" class="fixed-width-img" alt="سبات">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 21.png" class="fixed-width-img" alt="موسم الورد">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 22.png" class="fixed-width-img" alt="shawrma factory">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 23.png" alt="علبة">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 24.png" class="fixed-width-img" alt="k">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 27.png" class="w-25" alt="flower">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img">
+                                        <img src="imgs/clients/logo 25.png" class="fixed-width-img" alt="أوراق العربي">
+                                    </div>
+                                </div>
+                                <div class="group group-last border-right-none">
+                                    <div class="img bg-black">
+                                        <img src="imgs/clients/logo 3.png" alt="attraction">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section id="testimonials" class="testimonials position-relative py-5 min-vh-100">
+            <div class="vectors">
+                <img src="imgs/testimonials/Group 14.png" class="position-absolute  start-0 top-0"  alt="vector">
+                <img src="imgs/testimonials/Group 15.png" class="position-absolute start-0 bottom-0"  alt="vector">
+            </div>
+            <div class="container position-relative">
+                <div class="row gx-0">
+                    <div class="col-12">
+                        <div class="main-title text-center py-3 w-85 mx-auto mb-2">
+                            <h2 class="semi-bold fs-1 mb-2 text-capitalize">Our Testimonials</h2>
+                            <p class="mx-auto">What our clients Say about us</p>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+
+                        <div class="carousel-indicators position-static d-flex justify-content-between mt-2">
+                            <div class="indicator-item indicators-sides align-self-start bg-white">
+                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="life"  aria-label="Slide 1" src="imgs/testimonials/logo 30.png" alt="">
+                            </div>
+                            <div class="indicator-item align-self-end bg-black">
+                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="attraction" aria-label="Slide 2" src="imgs/testimonials/logo 31.png" alt="">
+                            </div>
+                            <div class="indicator-item indicator-center align-self-center bg-white">
+                                <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active spa" aria-label="Slide 3" src="imgs/testimonials/logo lara spa done 2.png" alt="">
+                            </div>
+                            <div class="indicator-item align-self-end bg-white">
+                                <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="attraction" aria-label="Slide 4" src="imgs/testimonials/logo 32.png" alt="">
+                            </div>
+                            <div class="indicator-item indicators-sides align-self-start bg-black">
+                                <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="life" aria-label="Slide 5" src="imgs/testimonials/logo1 2.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="svgs">
+                            <svg height="50" width="50" class="position-absolute top-0 start-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#FFA8A5BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-50 start-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#AFCDFBBF"/>
+                            </svg>
+                            <svg height="50" width="50" class="left-svg position-absolute">
+                                <circle cx="20" cy="20" r="10" stroke="" stroke-width="3" fill="#F99746BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-0 end-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#FFA8A5BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-50 end-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#AFCDFBBF"/>
+                            </svg>
+                            <svg height="50" width="50" class="right-svg position-absolute">
+                                <circle cx="20" cy="20" r="10" stroke="" stroke-width="3" fill="#F99746BF"/>
+                            </svg>
+                        </div>
+
+                        <div class="carousel-inner pt-5">
+                            <div class="carousel-item">
+                                <h3>Life Leonge</h3>
+                                <blockquote> <i class="fa-solid fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i class="fa-solid fa-quote-right"></i> </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <h3>Attraction</h3>
+                                <blockquote> <i class="fa-solid fa-quote-left"></i> Suspendisse non velit lacus. Mauris efficitur lorem a justo semper, ut suscipit ligula malesuada. Donec dui nulla. <i class="fa-solid fa-quote-right"></i> </blockquote>
+                            </div>
+                            <div class="carousel-item active">
+                                <h3>Lara Spa</h3>
+                                <blockquote> <i class="fa-solid fa-quote-left"></i> Vestibulum lectus massa, volutpat ut tristique nec, volutpat in turpis. In vehicula tempus odio. Nullam enim ligula. <i class="fa-solid fa-quote-right"></i> </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <h3>Al-Arabi Papers</h3>
+                                <blockquote> <i class="fa-solid fa-quote-left"></i> Nunc accumsan finibus sollicitudin. Integer malesuada purus sapien, sit amet volutpat sem fringilla ut. Proin viverra scelerisque mollis. <i class="fa-solid fa-quote-right"></i> </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <h3>Valley</h3>
+                                <blockquote> <i class="fa-solid fa-quote-left"></i> Fusce euismod eget nulla a tempus. Pellentesque in varius metus. Fusce iaculis cursus ante, vel vestibulum dui sagittis vitae. <i class="fa-solid fa-quote-right"></i> </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="carousel-indicators position-static indicators-height">
+                            <div id="indicators" class="indect">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="change" aria-current="true" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left fs-2 " aria-hidden="true"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right fs-2" aria-hidden="true"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="numbers" class="numbers">
+            <div class="numbers-bg py-5 d-flex justify-content-center align-items-center">
+                <div class="container-fluid text-center text-white">
+                    <div class="row gy-3">
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column text-white">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="250"></span></span>
+                                <h2 class="text-capitalize">Our Clients</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column text-white">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="32"></span> K</span>
+                                <h2 class="text-capitalize">No. of seals collected</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column text-white">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="14"></span> K</span>
+                                <h2 class="text-capitalize">customers Gifts</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- pricing section -->
+        <section id="pricing" class="pricing py-5">
+            <div class="container py-3">
+                <div class="col-12">
+                    <div class="main-title text-center pt-3 w-75 mx-auto mb-5">
+                        <h2 class="semi-bold fs-1 mb-3">Pricing</h2>
+                        <p class="mx-auto">Choose the suitable plan for your work. Try Free for 7 days.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row gy-4">
+                        <div class="col-lg-4">
+                            <div class="price">
+                                <h3 class="name">Junior Plan</h3>
+                                <div class="cont-pricing">
+                                    <h6 class="salary"><span class="fs-1 main-color">20 $</span> /Month or 190 $ /Year</h6>
+                                    <h4><span class="main-color">3</span> card design</h4>
+                                    <h4><span class="main-color">3</span> Location</h4>
+                                    <h4><span class="main-color">3</span> Subusers</h4>
+                                    <h4>Card Customizations</h4>
+                                    <h4 class="through">Unique customer Enroll</h4>
+                                    <h4 class="through">Data Export</h4>
+                                    <h4 class="through">Push Notifications</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="price">
+                                <h3 class="name">Intermediate Plan</h3>
+                                <div class="cont-pricing">
+                                    <h6 class="salary"><span class="fs-1 main-color">45 $</span> /Month or 400 $ /Year</h6>
+                                    <h4><span class="main-color">10</span> card design</h4>
+                                    <h4><span class="main-color">10</span> Location</h4>
+                                    <h4><span class="main-color">15</span> Subusers</h4>
+                                    <h4>Card Customizations</h4>
+                                    <h4 class="through">Unique customer Enroll</h4>
+                                    <h4 class="through">Data Export</h4>
+                                    <h4 class="through">Push Notifications</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="price">
+                                <h3 class="name">Experience Plan</h3>
+                                <div class="cont-pricing">
+                                    <h6 class="salary"><span class="fs-1 main-color">55 $</span> /Month or 549 $ /Year</h6>
+                                    <h4><span class="main-color">Unlimited</span> card design</h4>
+                                    <h4><span class="main-color">Unlimited</span> Location</h4>
+                                    <h4><span class="main-color">Unlimited</span> Subusers</h4>
+                                    <h4>Card Customizations</h4>
+                                    <h4 class="through">Unique customer Enroll</h4>
+                                    <h4 class="through">Data Export</h4>
+                                    <h4 class="through">Push Notifications</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-4 mx-auto">
+                    <div class="text-center mt-5">
+                        <a target="_blank" href="check.html" class="btn main-btn w-100 text-capitalize semi-bold">start Free trial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer" class="footer py-5 bg-black position-relative">
+            <a id="btnTopFooter" class="position-absolute top-0 end-0 translate-middle text-white"><i class="fa-solid fa-chevron-up fs-3 p-2 main-bg rounded-circle"></i></a>
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="logo-footer">
+                            <img src="imgs/footer/2.png" alt="logo zari">
+                            <p>Everything you need to increase customer loyalty will be available now within one
+                                application.</p>
+                            <h4 class="mb-4">Follow us </h4>
+                            <div class="icons-footer d-flex align-items-center">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="navigate">
+                            <h4 class="mb-4">navigate</h4>
+                            <div class="links-navigate d-flex justify-content-center flex-column">
+                                <a href="#why">Why Layout system</a>
+                                <a href="#features">Features</a>
+                                <a href="#how">How it work</a>
+                                <a href="#sample">Sample</a>
+                                <a href="#clients">Our Clients</a>
+                                <a href="#testimonials">Testimonials</a>
+                                <a href="#pricing">Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="navigate">
+                            <h4 class="mb-4">About us</h4>
+                            <div class="links-navigate d-flex justify-content-center flex-column">
+                                <a href="#">About Zari Loyalty</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="navigate">
+                            <h4 class="mb-4">Contact us</h4>
+                            <div class="links-navigate d-flex justify-content-center flex-column">
+                                <a target="_blank" href="tel:+966 92 002 4403"><span><i class="fa-solid fa-phone"></i></span> +966 92 002 4403</a>
+                                <a target="_blank" href="https://wa.me/+966 56 677 0235"><span><i class="fa-brands fa-whatsapp"></i></span> +966 56 677 0235</a>
+                                <a target="_blank" href="https://zariapps.com/"><span><i class="fa-solid fa-globe"></i></span> https://zariapps.com/</a>
+                                <a target="_blank" href="https://www.Sales@aznetsul.com"><span><i class="fa-regular fa-envelope"></i></span> Sales@aznetsul.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="subscribe">
+                            <h4 class="mb-4">join us</h4>
+                            <p>Enter your email to subscribe and join our newsletter</p>
+                            <input id="emailSubscribe" type="email" name="email-subscibe" required class="form-control py-2 mx-auto bg-white" placeholder="Enter your email">
+                            <div id="alertEmailSubscibe" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">consists of 3-15 characters and end with (@"gmail".com)...</div>
+                            <p id="alertSubscribe" class="fs-6 mb-0 mt-3 w-75 text-center mx-auto"></p>
+                            <input id="subscribe" type="button" class="form-control w-50 mt-3 main-color semi-bold py-2 bg-white" value="Subscribe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- js files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
